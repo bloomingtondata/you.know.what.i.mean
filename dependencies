@@ -1,0 +1,7 @@
+
+- GLoVe
+- wget
+- GNU parallel
+
+
+(do a musl / jewelbox version?)
