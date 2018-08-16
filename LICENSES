@@ -1,0 +1,4 @@
+
+Word similarity is computed using github.com/stanfordnlp/GLoVe
+
+(see LICENSE.APACHE and the text of their README excerpted on `date` for the openness of their word-distance results.)
