@@ -1,0 +1,2 @@
+time <glove.840B.300d.txt head -5600 | tail -22 | rms | nl | sort -k 3 -r
+time 80000
