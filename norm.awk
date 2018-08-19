@@ -1,5 +1,6 @@
-{ print $1; }
-
-{ for (d=2; d<=NF; d++) { $norm += $d*$d; $norm=sqrt($norm); } }
-
-{ print $1 $norm; }
+{rms=0
+for (d=2;d<=NF;d++) {
+	rms=d^2
+	}
+print $1, sqrt(rms)
+}
