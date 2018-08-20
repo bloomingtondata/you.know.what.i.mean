@@ -31,3 +31,7 @@ time 80000
  5966  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1; norm=0; for (d=2;d<=NF;d++) { print ($d*$d)  }}' |les
  6150  history | grep lok | tee -a useful.bash.commands.to.make.this 
 <glove.6B head -$(($RANDOM))  | tail -1 | lok '{s=0; for (d=2;d<=NF;d++) {s+=$d*$d}} {print $1, s}'
+
+paste <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')  <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')
+
+#to get vectors side-by-side
