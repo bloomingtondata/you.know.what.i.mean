@@ -1,2 +1,33 @@
 time <glove.840B.300d.txt head -5600 | tail -22 | rms | nl | sort -k 3 -r
 time 80000
+ 2172  echo "alias xbps-search='xbps-query -Rs'" | tee -a ~/.bash_aliases 
+ 4343  echo "ulimit -n 3333" | tee -a ~/.bashrc
+ 6096  echo cpulimit -l 50 <lengths.of.words_where.is.zero\? head -850000 | sort -k2 --parallel=8 >longest.shortest.words.in.their.31.dimensional.representation_840B.300d.glove | tee -a useful.bash.commands.to.make.this 
+ 6097  echo <lengths.of.words_where.is.zero\? sort -k2 --parallel=8 >longest.shortest.words.in.their.31.dimensional.representation_840B.300d.glove | tee -a useful.bash.commands.to.make.this 
+ 6146  echo <lengths.of.words_where.is.zero\? sort -k2 --parallel=8 >longest.shortest.words.in.their.31.dimensional.representation_840B.300d.glove | tee -a useful.bash.commands.to.make.this 
+ 6148  history | grep echo | grep tee
+ 6149  history | grep echo | grep tee | tee -a useful.bash.commands.to.make.this 
+ 5920  <glove.840B.300d.txt lok 'NF' | head
+ 5921  <glove.840B.300d.txt lok 'print NF' | head
+ 5922  <glove.840B.300d.txt lok '{print NF}' | head
+ 5923  <glove.840B.300d.txt lok 'NF!=301' | head
+ 5926  <glove.840B.300d.txt parallel -j0 lok 'NF!=301' | head
+ 5927  <glove.840B.300d.txt parallel --pipe -j0 lok 'NF!=301' | head
+ 5929  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1}'
+ 5930  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1; norm=0; for (d=2;d<=NF;d++) { norm += ($d*$d)  }; print $norm}'
+ 5931  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1; norm=0; for (d=2;d<=NF;d++) { print ($d*$d)  }; print $norm}'
+ 5932  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1; norm=0; for (d=2;d<=NF;d++) { print ($d*$d)  }}'
+ 5933  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1; norm=0; for (d=2;d<=NF;d++) { print ($d*$d)  }}' |les
+ 5953  <glove.840B.300d.txt lok 'NF' | head
+ 5954  <glove.840B.300d.txt lok 'print NF' | head
+ 5955  <glove.840B.300d.txt lok '{print NF}' | head
+ 5956  <glove.840B.300d.txt lok 'NF!=301' | head
+ 5959  <glove.840B.300d.txt parallel -j0 lok 'NF!=301' | head
+ 5960  <glove.840B.300d.txt parallel --pipe -j0 lok 'NF!=301' | head
+ 5962  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1}'
+ 5963  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1; norm=0; for (d=2;d<=NF;d++) { norm += ($d*$d)  }; print $norm}'
+ 5964  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1; norm=0; for (d=2;d<=NF;d++) { print ($d*$d)  }; print $norm}'
+ 5965  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1; norm=0; for (d=2;d<=NF;d++) { print ($d*$d)  }}'
+ 5966  <glove.840B.300d.txt head -5000 |tail|  lok '{print $1; norm=0; for (d=2;d<=NF;d++) { print ($d*$d)  }}' |les
+ 6150  history | grep lok | tee -a useful.bash.commands.to.make.this 
+<glove.6B head -$(($RANDOM))  | tail -1 | lok '{s=0; for (d=2;d<=NF;d++) {s+=$d*$d}} {print $1, s}'
