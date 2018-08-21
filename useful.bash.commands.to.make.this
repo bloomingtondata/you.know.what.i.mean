@@ -64,3 +64,8 @@ gonsalves        sidhu
 
 
 #working!
+
+
+#yeah, really working
+
+regina@scheherezade:~/yacc.learn/yacc.zach/you.know.what.i.mean$ cat <(<glove.6B head -$(($RANDOM)) | tail -1) <(<glove.6B head -$(($RANDOM)) | tail -1) | turn | body subtract.vectors | body rms.of.a.column | tee -a distance.between.two.random.words
