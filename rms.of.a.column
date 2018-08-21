@@ -1,0 +1,6 @@
+#!/usr/bin/lok -f
+BEGIN {s=0}
+
+{s+=$1*$1}
+
+END {print sqrt(s)}
