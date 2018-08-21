@@ -69,3 +69,11 @@ gonsalves        sidhu
 #yeah, really working
 
 regina@scheherezade:~/yacc.learn/yacc.zach/you.know.what.i.mean$ cat <(<glove.6B head -$(($RANDOM)) | tail -1) <(<glove.6B head -$(($RANDOM)) | tail -1) | turn | body subtract.vectors | body rms.of.a.column | tee -a distance.between.two.random.words
+
+
+
+#i clobbered the longest.shortest words so make it again
+time <glove.840B.300d.txt parallel --sshdelay 0.2 -S 2/$S1,8/:,16/$S2,8/$S3,8/$S4 --pipe
+"awk '{for(d=2;d<=NF;d++) s+=\$d*\$d; print \$1, s}'" | nl | sort --parallel=
+8 --compress-program=pigz --key=3 --reverse >longest.shortest.words.in.their.
+31.dimensional.representation_840B.300d.glove
