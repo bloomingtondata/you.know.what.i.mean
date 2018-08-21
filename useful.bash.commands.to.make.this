@@ -35,3 +35,16 @@ time 80000
 paste <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')  <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')
 
 #to get vectors side-by-side
+paste <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')  <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')
+
+
+#subtraction
+paste <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')  <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n') | body lok '{print $1-$2}'
+
+
+
+
+# compare two random  vectors by standard inner product (geometric)
+
+paste <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')  <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n') | body lok '{print $1-$2}' | lok 'NR ==1 {s=0;print $1, "-", $2} NR!=1 {s+=$1*$1} END {print sqrt(s)}'
+
