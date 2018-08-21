@@ -48,3 +48,19 @@ paste <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')  <(<glove.6B head 
 
 paste <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n')  <(<glove.6B head -$(($RANDOM)) | tail -1 | tr ' ' '\n') | body lok '{print $1-$2}' | lok 'NR ==1 {s=0;print $1, "-", $2} NR!=1 {s+=$1*$1} END {print sqrt(s)}'
 
+
+#R's t() function
+# turn the rows sideways (Transpose)
+#  so they can be subtracted easier
+
+<glove.6B head -52387 | tail -2 | lok '{for (col=1;col<=NF;col++) {anything[NR,col]=$col}} ; END {for(formerlycolumn=1;formerlycolumn<=31;formerlycolumn++) print anything[1,formerlycolumn], anything[2,formerlycolumn]  }'
+
+
+
+
+regina@scheherezade:~/yacc.learn/yacc.zach/you.know.what.i.mean$ <glove.6B head -52387 | tail -2 | turn | body subtract.vectors | body lok 'BEGIN {s=0}; {s+=$1*$1}; END {print sqrt(s)}'
+gonsalves        sidhu
+4.012
+
+
+#working!
