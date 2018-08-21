@@ -1,0 +1,9 @@
+1. wget their trained data
+2. unzip
+3. define distance
+4. set argument value (eg 90% close enough vs 99% close enough)
+5a. make a list of "close enough" words
+5b. grep for the first WHILE the second is being constructed?
+5c. save a table of which words you have already used? (how?)
+6. <word close.enough | xargs grep <files
+7. something with a tempfile (mimic git config)
